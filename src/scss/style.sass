@@ -1,0 +1,119 @@
+@import _grid
+@import _variables
+@import _mixin
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+.container
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+
+.templateRow
+  content: " "
+  display: table
+
+.row
+  &:before
+    @extend .templateRow
+
+  &:after
+    @extend .templateRow
+
+    clear: both
+
+[class*="col-"]
+  min-height: 7px
+  padding: 12px
+  float: left
+
+#header
+  div
+    div
+      text-align: center
+
+      img
+
+#home
+  div
+    img
+      width: 100%
+
+#menu
+  div.col-6
+    margin-bottom: 7%
+
+    a
+      text-decoration: none
+      color: $titulos-gris
+      font-size: $titulos-size
+      font-family: $titulos-family
+      padding-left: $padding-l-a
+
+  div
+    img
+      width: 8%
+      text-align: right
+
+#tarjetas
+  div.row
+    div.col-7
+      font-family: $titulos-family
+
+#newsfeed
+  section
+    div
+      div
+        img
+          width: 100%
+
+#tarjetasImg
+  div
+    div
+      div
+        img
+          width: 100%
+
+      div
+        img
+          width: 100%
+
+      div
+        div
+          img
+            width: 30%
+
+#brand
+  div
+    div
+      img
+        width: 100%
+
+#tarjetasImgDos
+  div
+    div
+      div
+        img
+          width: 100%
+
+      div
+        img
+          width: 100%
+
+      div
+        div
+          img
+            width: 30%
+
+#latest
+  div
+    div
+      img
+        width: 100%
+
+      div
+        img
+          width: 10%

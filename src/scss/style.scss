@@ -1,8 +1,136 @@
 @import '_grid';
 @import '_variables';
 @import '_mixin';
+@import '_funciones';
 
+body{
+    @include estilos-fuentes;
+}
 
+#header {
+    div{
+        div{
+            text-align: $alinear-centro;
+            img{
+                
+            }
+        }
+    }
+}
+
+#home {
+    div{
+        img {
+            @include img-size;
+        }
+    }
+}
+
+#menu {
+    div.col-6{
+        margin-bottom: 7%;
+        a{
+            text-decoration: $none;
+            color: $titulos-gris;
+            font-size: font-size(1em);
+            font-family: $titulos-family;
+            padding-left: $padding-l-a;
+        }
+    }
+    div{
+        img {
+            width: 8%;
+            text-align: $alinear-derecho;
+        }
+    }
+}
+
+#tarjetas{
+    div.row{
+        div.col-7{
+        }
+    }
+}
+
+#newsfeed{
+    section{
+        div{
+            div{
+                img{
+                    @include img-size;
+                }
+            }
+        }
+    }
+}
+
+div.imgClase{
+    div{
+        img{
+            @include img-size;
+        }
+    }
+    div{
+        img{
+            @include img-size;
+        }
+    }
+    div{
+        div{
+            img{
+                @include img-size;
+            }
+        }
+    }
+}
+
+#brand {
+    div {
+        div{
+            img {
+                @include img-size;
+            }
+        }
+    }
+}
+
+.imgIcon {
+   width: $imgIcon;
+}
+
+#latest {
+    div {
+        div{
+            img {
+                @include img-size;
+            }
+            div{
+                img{
+                    @include img-size;
+                }
+            }
+        }
+    }
+}
+
+#iconos {
+    div{
+        img.imgIcon{
+            width: $imgIcon;
+        }
+    }
+}
+
+hr {
+    @include hrStyle; 
+}
+
+.fecha{
+    color: $fecha-gris;
+    font-size: $fecha-texto;
+}
+
+/* --- inicio GRID --- */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -36,133 +164,4 @@
     float: left;
 }
 
-#header {
-    div{
-        div{
-            text-align: center;
-            img{
-                
-            }
-        }
-    }
-}
-
-#home {
-    div{
-        img {
-            width: 100%;
-        }
-    }
-}
-
-#menu {
-    div.col-6{
-        margin-bottom: 7%;
-        a{
-            text-decoration: none;
-            color: $titulos-gris;
-            font-size: $titulos-size;
-            font-family: $titulos-family;
-            padding-left: $padding-l-a;
-        }
-    }
-    div{
-        img {
-            width: 8%;
-            text-align: right;
-        }
-    }
-}
-
-#tarjetas{
-    div.row{
-        div.col-7{
-            font-family: $titulos-family;
-        }
-    }
-}
-
-#newsfeed{
-    section{
-        div{
-            div{
-                img{
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-#tarjetasImg {
-    div{
-        div{
-            div{
-                img{
-                    width: 100%;
-                }
-            }
-            div{
-                img{
-                    width: 100%;
-                }
-            }
-            div{
-                div{
-                    img{
-                        width: 30%;
-                    }
-                }
-            }
-        }
-    }
-}
-
-#brand {
-    div {
-        div{
-            img {
-                width: 100%;
-            }
-        }
-    }
-}
-
-#tarjetasImgDos {
-    div{
-        div{
-            div{
-                img{
-                    width: 100%;
-                }
-            }
-            div{
-                img{
-                    width: 100%;
-                }
-            }
-            div{
-                div{
-                    img{
-                        width: 30%;
-                    }
-                }
-            }
-        }
-    }
-}
-
-#latest {
-    div {
-        div{
-            img {
-                width: 100%;
-            }
-            div{
-                img{
-                    width: 10%;
-                }
-            }
-        }
-    }
-}
+/* --- fin GRID --- */

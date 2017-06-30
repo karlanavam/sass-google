@@ -1,0 +1,3 @@
+@function font-size($num: 4em){
+  @return  $num / 2em;
+}

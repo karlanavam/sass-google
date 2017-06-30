@@ -1,6 +1,8 @@
 @import '_variables';
 @import '_mixin';
+@import '_funciones';
 
+/*  -- INICIO GRID --  */
 
 @function anchoDeColumnas($num, $cols:12){
     @return percentage($num / $cols);
@@ -11,3 +13,21 @@
         width: anchoDeColumnas($i);
     }
 } 
+
+/*  -- FIN GRID --  */
+
+
+
+/*  -- INICIO OFFSET --  */
+
+@function inicioColumna($offeset){
+    @return percentage(($offeset/12));
+}
+
+@for $offeset from 1 through 12{
+    .offset-#{$offeset}{
+        margin-left: inicioColumna($offeset);
+    }
+}
+
+/*  -- FIN OFFSET --  */

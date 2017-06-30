@@ -1,0 +1,20 @@
+@import '_variables';
+@import '_funciones';
+
+@mixin img-size {
+    width: $porcentaje;
+}
+
+@mixin hrStyle {
+    width: $porcentaje;
+    border: 2px solid $azul;
+    margin: 4% 0;
+}
+
+@mixin estilos-fuentes {
+    font-family: $titulos-family;
+    color: $titulos-gris;
+    
+}
+
+/* funciones regrean valores y mixins regresa strings */ 

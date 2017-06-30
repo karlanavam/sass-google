@@ -1,3 +1,5 @@
+/* funciones regrean valores y mixins regresa strings */
+/*  -- INICIO GRID --  */
 .col-1 {
   width: 8.33333%; }
 
@@ -34,6 +36,102 @@
 .col-12 {
   width: 100%; }
 
+/*  -- FIN GRID --  */
+/*  -- INICIO OFFSET --  */
+.offset-1 {
+  margin-left: 8.33333%; }
+
+.offset-2 {
+  margin-left: 16.66667%; }
+
+.offset-3 {
+  margin-left: 25%; }
+
+.offset-4 {
+  margin-left: 33.33333%; }
+
+.offset-5 {
+  margin-left: 41.66667%; }
+
+.offset-6 {
+  margin-left: 50%; }
+
+.offset-7 {
+  margin-left: 58.33333%; }
+
+.offset-8 {
+  margin-left: 66.66667%; }
+
+.offset-9 {
+  margin-left: 75%; }
+
+.offset-10 {
+  margin-left: 83.33333%; }
+
+.offset-11 {
+  margin-left: 91.66667%; }
+
+.offset-12 {
+  margin-left: 100%; }
+
+/*  -- FIN OFFSET --  */
+/* funciones regrean valores y mixins regresa strings */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #424242; }
+
+#header div div {
+  text-align: center; }
+
+#home div img {
+  width: 100%; }
+
+#menu div.col-6 {
+  margin-bottom: 7%; }
+  #menu div.col-6 a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 0.5;
+    font-family: "Roboto", sans-serif;
+    padding-left: 4%; }
+#menu div img {
+  width: 8%;
+  text-align: right; }
+
+#newsfeed section div div img {
+  width: 100%; }
+
+div.imgClase div img {
+  width: 100%; }
+div.imgClase div img {
+  width: 100%; }
+div.imgClase div div img {
+  width: 100%; }
+
+#brand div div img {
+  width: 100%; }
+
+.imgIcon {
+  width: 10%; }
+
+#latest div div img {
+  width: 100%; }
+#latest div div div img {
+  width: 100%; }
+
+#iconos div img.imgIcon {
+  width: 10%; }
+
+hr {
+  width: 100%;
+  border: 2px solid #4285f4;
+  margin: 4% 0; }
+
+.fecha {
+  color: #6d7177;
+  font-size: 0.9em; }
+
+/* --- inicio GRID --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -56,50 +154,6 @@
   padding: 12px;
   float: left; }
 
-#header div div {
-  text-align: center; }
-
-#home div img {
-  width: 100%; }
-
-#menu div.col-6 {
-  margin-bottom: 7%; }
-  #menu div.col-6 a {
-    text-decoration: none;
-    color: #424242;
-    font-size: 0.8em;
-    font-family: "Roboto", sans-serif;
-    padding-left: 4%; }
-#menu div img {
-  width: 8%;
-  text-align: right; }
-
-#tarjetas div.row div.col-7 {
-  font-family: "Roboto", sans-serif; }
-
-#newsfeed section div div img {
-  width: 100%; }
-
-#tarjetasImg div div div img {
-  width: 100%; }
-#tarjetasImg div div div img {
-  width: 100%; }
-#tarjetasImg div div div div img {
-  width: 30%; }
-
-#brand div div img {
-  width: 100%; }
-
-#tarjetasImgDos div div div img {
-  width: 100%; }
-#tarjetasImgDos div div div img {
-  width: 100%; }
-#tarjetasImgDos div div div div img {
-  width: 30%; }
-
-#latest div div img {
-  width: 100%; }
-#latest div div div img {
-  width: 10%; }
+/* --- fin GRID --- */
 
 /*# sourceMappingURL=style.css.map */
